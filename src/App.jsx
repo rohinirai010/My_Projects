@@ -16,7 +16,7 @@ function App() {
 
 
     <>
-      <div className="flex flex-col gap-[2rem] px-[1rem]">
+      <div className="flex flex-col gap-[2rem]">
         <Page1 />
         {/* <Page2 /> */}
         <Page3 />

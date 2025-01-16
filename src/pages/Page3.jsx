@@ -17,7 +17,7 @@ const AnimatedMovieBanner = () => {
     <div className="relative w-full max-w-2xl mx-auto h-64 flex mt-[5rem] mb-[3rem] overflow-hidden">
       {/* First State - Lions with text */}
       <div
-        className={`absolute inset-0 transition-transform duration-500 ease-in-out ${
+        className={`absolute inset-0 transition-transform duration-500 ease-in-out h-[8rem] ${
           animationState === 1 ? "translate-x-0" : "-translate-x-full"
         }`}
       >
