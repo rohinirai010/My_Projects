@@ -45,8 +45,8 @@ const ShareBox = ({ title, value }) => {
       dark:hover:shadow-[0_8px_25px_rgba(0,0,0,0.4)]"
     >
       <div className="bg-white w-full p-3 rounded-xl shadow-[0_2px_10px_rgba(244,129,14,0.1)]
-        dark:bg-[#2D2D2D] dark:shadow-[0_2px_10px_rgba(0,0,0,0.2)]">
-        <h2 className="truncate w-full text-center text-gray-800 font-medium dark:text-gray-100">
+        dark:bg-[#2D2D2D] dark:shadow-[0_2px_10px_rgba(0,0,0,0.2)] dark:border-2 dark:border-[#F4810E]/30">
+        <h2 className="truncate w-full text-center text-gray-800 font-medium dark:text-gray-100 ">
           {value}
         </h2>
       </div>

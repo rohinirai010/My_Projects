@@ -35,8 +35,8 @@ const AnimatedMovieBanner = () => {
     if (stage === 2) {
       setVideoProgress(0); // Reset progress bar
       if (videoRef.current) {
-        videoRef.current.currentTime = 0; // Reset video
-        videoRef.current.play();
+        videoRef.current.currentTime = 0; // Ensure video starts from the beginning
+        videoRef.current.play(); // Start video playback
       }
     }
   }, [stage]);
@@ -44,18 +44,16 @@ const AnimatedMovieBanner = () => {
   const handleVideoEnd = () => {
     console.log("Video ended. Show play button.");
 
-    // Temporarily disable animation for resetting the stage
-    setSlideComplete(false);
-
     // Show the play button when the video ends
     setShowPlayButton(true);
   };
 
   const updateProgress = () => {
     if (videoRef.current) {
+      // Calculate the progress percentage
       const progress =
         (videoRef.current.currentTime / videoRef.current.duration) * 100;
-      setVideoProgress(progress);
+      setVideoProgress(progress); // Update the progress state
     }
   };
 
@@ -176,7 +174,7 @@ const AnimatedMovieBanner = () => {
                 <div className="w-full bg-white/30 h-1 rounded-full overflow-hidden">
                   <div
                     className="h-full bg-blue-400 rounded-full"
-                    style={{ width: `${videoProgress}%` }}
+                    style={{ width: `${videoProgress}%` }} // Set progress based on video progress
                   />
                 </div>
 
