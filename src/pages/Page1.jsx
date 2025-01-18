@@ -4,11 +4,19 @@ import commissionImg from "../assets/commissionImg.png";
 import appDownloadImg from "../assets/downloadImg.png";
 import qrCodeImg from "../assets/qrImg.png";
 import bgImg from "../assets/bgImg.png";
+import ThemeToggle from "../components/ThemeToggle";
+import { useEffect } from "react";
 
 const Page1 = () => {
+  useEffect(() => {
+   
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    document.documentElement.classList.toggle('dark', isDarkMode);
+  }, []);
+
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-orange-50 to-red-50 dark:from-gray-900 dark:to-gray-800">
-       
+      <ThemeToggle />
       <div className="relative w-full max-w-lg mx-4 bg-gradient-to-r from-[#ffe0ef] via-[#fff9df] to-[#ffcec7] dark:from-gray-800 dark:via-gray-700 dark:to-gray-800 rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-500">
         <img
           src={bgImg}
