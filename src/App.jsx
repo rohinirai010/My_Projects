@@ -19,7 +19,7 @@ function App() {
       <div className="flex flex-col gap-[2rem]">
         <Page1 />
         <Page2 />
-        <Page3 />
+        {/* <Page3 /> */}
       </div>
     </>
   );
