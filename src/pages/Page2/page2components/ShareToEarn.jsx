@@ -38,7 +38,7 @@ const CopyButton = ({ text }) => {
 
 const ShareBox = ({ title, value }) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-4 w-[100%] sm:w-[50%] bg-gradient-to-br from-[#FEF7E9] to-[#FFF4E4] p-5 
+    <div className="flex flex-col items-center justify-center gap-4 w-[100%] sm:w-[50%] bg-gradient-to-br from-[#E8B889] to-[#FFF4E4] p-5 
       border-2 border-orange-200/50 rounded-2xl shadow-[0_4px_20px_rgba(244,129,14,0.1)] hover:scale-105 transform transition-all duration-300 
       hover:shadow-[0_8px_25px_rgba(244,129,14,0.15)]
       dark:from-[#222222] dark:to-[#333333] dark:border-[#444444] dark:shadow-[0_4px_20px_rgba(0,0,0,0.3)]
@@ -71,7 +71,7 @@ const ShareToEarn = ({ profileImg }) => {
           dark:from-[#F4810E] dark:to-[#F58B0D] dark:shadow-[0_0_10px_rgba(244,129,14,0.3)]"/>
       </div>
 
-      <div className="p-6 flex flex-col gap-5 bg-gradient-to-br from-[#FEF7E9] to-[#FFF4E4] border-2 border-orange-200/50 rounded-2xl 
+      <div className="p-6 flex flex-col gap-5 bg-gradient-to-br from-[#FEF7E9] to-[#E79A4D] border-4 border-orange-300/60 rounded-2xl 
         shadow-[0_8px_30px_rgba(244,129,14,0.15)]
         dark:from-[#222222] dark:to-[#333333] dark:border-[#444444] dark:shadow-[0_8px_30px_rgba(0,0,0,0.3)]"
       >
@@ -98,7 +98,7 @@ const ShareToEarn = ({ profileImg }) => {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-5 sm:gap-1 w-full bg-white/95 p-5 rounded-2xl shadow-[0_4px_20px_rgba(244,129,14,0.1)]
+        <div className="flex flex-col sm:flex-row gap-5 sm:gap-1 w-full bg-white/95  p-5 rounded-2xl shadow-[0_4px_20px_rgba(244,129,14,0.1)]
           dark:bg-[#2D2D2D] dark:shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
           <ShareBox 
             title="Affiliate Link" 
