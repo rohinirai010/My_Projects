@@ -21,12 +21,12 @@ const ReferralInterface = () => {
           </span>
         </div>
         <div className="text-xs mt-1 space-y-1.5 text-amber-800 dark:text-amber-300">
-          <div className="flex items-center gap-1 text-sm text-[#fff]">
+          <div className="flex items-center gap-1 text-sm  dark:text-[#fff]">
             <IoPersonSharp className="w-4 h-4" />
             <span className="font-bold text-base">New app users </span> (first
             download)
           </div>
-          <div className="flex items-center gap-1 text-sm text-[#fff]">
+          <div className="flex items-center gap-1 text-sm dark:text-[#fff]">
             <RiDownload2Fill className="w-4 h-4" />
             <h1>
               <span className="font-bold text-base"> Reinstalled users</span>{" "}
@@ -180,7 +180,7 @@ const ReferralInterface = () => {
 
   return (
     <div
-      className={`max-w-md w-full h-auto mx-auto ${activeTab === "earn" ? "bg-[#F5E198]" : "bg-[#F58B0D]"} dark:bg-gradient-to-br dark:from-[#2D2D2D] dark:to-[#444444] dark:border-[#555555] dark:text-white rounded-xl shadow-lg`}
+      className={`max-w-md w-full h-auto mx-auto ${activeTab === "earn" ? "bg-[#F4DD91]" : "bg-[#F58B0D]"} dark:bg-gradient-to-br dark:from-[#2D2D2D] dark:to-[#444444] dark:border-[#555555] dark:text-white rounded-xl shadow-lg`}
     >
       <div className="flex justify-between relative">
         <div className="absolute inset-0 bg-orange-100/50 rounded-lg" />
@@ -189,7 +189,7 @@ const ReferralInterface = () => {
         <div className="flex w-full gap-4">
           <div
             className="w-1/2 py-2 px-3 cursor-pointer relative z-10 text-base sm:text-lg italic text-center font-bold
-              bg-[#F5E198] text-[#5C2701] dark:bg-[#F58B0D] dark:text-white rounded-lg"
+              bg-[#F4DD91] text-[#5C2701] dark:bg-[#F58B0D] dark:text-white rounded-lg"
             onClick={() => setActiveTab("earn")}
           >
             You can earn
@@ -197,7 +197,7 @@ const ReferralInterface = () => {
 
           <div
             className="w-1/2 py-2 px-3 cursor-pointer relative z-10 text-base sm:text-lg italic text-center font-bold
-                 text-[#ffffff] bg-[#F58B0D] dark:bg-[#F58B0D] dark:text-white"
+                 text-[#ffffff] bg-[#F58B0D] dark:bg-[#F58B0D] dark:text-white rounded-lg"
             onClick={() => setActiveTab("referrals")}
           >
             Referrals can get
