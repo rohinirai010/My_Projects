@@ -209,6 +209,8 @@
 
 
 
+
+
   import { useState, useEffect } from "react";
   import lionFace from "../assets/lionFace.jpg";
   import lionImg from "../assets/lionImg.png";
@@ -238,7 +240,7 @@
     }, []);
 
     return (
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center p-1">
+      <div className="min-h-screen bg-gray-100 flex items-center justify-center p-1 mb-[3rem]">
         <div className="relative w-full max-w-2xl">
           <div className={`relative rounded-[6rem] shadow-xl transition-all duration-700 ${
             isAnimating ? "bg-[#66503B]" : "bg-[#ebe5e5]"
@@ -304,7 +306,7 @@
           
           {/* Video Section */}
           {showVideo && (
-            <div className="relative mt-8 rounded-lg shadow-lg overflow-hidden bg-black">
+            <div className="relative rounded-lg shadow-lg overflow-hidden bg-black animate-move-up">
               <video
                 src={videoFile}
                 controls

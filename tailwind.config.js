@@ -14,6 +14,7 @@ export default {
         "fade-in": "fade-in 2s ease-out forwards",
         "fade-out": "fade-out 2s ease-out forwards",
         "move-down-fade-out": "move-down-fade-out 3s ease-out forwards",
+        "move-up": "move-up 1s ease-out forwards"
       },
       keyframes: {
         "move-to-center": {
@@ -77,6 +78,16 @@ export default {
           "100%": {
             transform: "translateY(150%)",
             opacity: "0",
+          },
+        },
+        "move-up": {
+          "0%": {
+            transform: "translateY(50%)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: "1",
           },
         },
       },
